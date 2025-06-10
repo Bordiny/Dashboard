@@ -1,0 +1,155 @@
+.box {
+    background-color: #fff;
+    height: 65vh;
+    border-radius: 5px;
+    margin: 10px 0px;
+    overflow: hidden;
+}
+
+.main_title {
+    margin: 10px;
+    text-transform: capitalize;
+    font-weight: bold;
+    position: relative;
+    width: fit-content;
+}
+
+.main_title::after {
+    content: "";
+    position: absolute;
+    bottom: -7px;
+    left: 0px;
+    background-image: linear-gradient(90deg, black 35%, white 35%);
+    height: 3px;
+    width: 70%;
+}
+
+/* ============================================= */
+
+.profile .profile_prog {
+    background: #ddd;
+    width: 60%;
+    height: 8px;
+    border-radius: 5px;
+    overflow: hidden;
+    margin: 15px auto;
+}
+
+.prog {
+    background: #ddd;
+    width: 70%;
+    height: 100%;
+    background-color: var(--blue);
+}
+
+.profile .stars {
+    margin: 15px auto;
+}
+
+.profile .stars svg {
+    margin: 0px 1px;
+    color: goldenrod;
+}
+
+.profile_main {
+    margin: 20px;
+    padding: 0px 10px;
+
+    /* padding-bottom: 30px; */
+    input {
+        width: 85px !important;
+        height: 25px;
+        margin-top: -5px;
+    }
+}
+
+.profile_main:not(:last-of-type) {
+    border-bottom: 1px solid #ddd;
+}
+
+.profile_cont {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.profile_cont>p {
+    color: gray;
+}
+
+.profile_cont>p>span {
+    color: #333;
+    font-weight: bold;
+}
+
+.profile_main .form-check-input {
+    width: 85px;
+    height: 25px;
+}
+
+.profile_main .form-check {
+    margin: -10px 0px;
+}
+
+@media (max-width: 767px) {
+    .profile_cont {
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 992px) {
+    .profile {
+        margin-bottom: -20px !important;
+    }
+}
+
+/* ----------------------------------skills--------------------------------------------- */
+.skills {
+    padding: 20px;
+}
+
+.skills .skill_cont {
+    display: flex;
+    margin: 20px auto;
+    padding-bottom: 10px;
+}
+
+.skill_cont:not(:last-of-type) {
+    border-bottom: 1px solid #ddd;
+}
+
+.skills .skill_cont p {
+    background: #ebebeb;
+    width: fit-content;
+    padding: 3px 7px;
+    border-radius: 5px;
+    font-size: 14px;
+    margin: 0px 3px;
+}
+
+/* -------------------------------------Activities---------------------------------- */
+.activities {
+    padding: 20px;
+}
+
+.act_cont {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 15px auto;
+    padding-bottom: 5px;
+}
+
+.act_cont:not(:last-of-type) {
+    border-bottom: 1px solid #ddd;
+}
+
+.left_act {
+    display: flex;
+    align-items: center;
+}
+
+.activities .left_act img {
+    width: 50px;
+    margin-right: 10px;
+}

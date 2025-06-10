@@ -1,0 +1,102 @@
+.box {
+    background-color: #fff;
+    height: 65vh;
+    border-radius: 5px;
+    margin: 10px 0px;
+    overflow: hidden;
+}
+
+.main_title {
+    margin: 10px;
+    text-transform: capitalize;
+    font-weight: bold;
+    position: relative;
+    width: fit-content;
+}
+
+.main_title::after {
+    content: "";
+    position: absolute;
+    bottom: -7px;
+    left: 0px;
+    background-image: linear-gradient(90deg, black 35%, white 35%);
+    height: 3px;
+    width: 70%;
+}
+
+.friend_box {
+    background-color: #fff;
+
+    border-radius: 5px;
+    margin: 10px 0px;
+    overflow: hidden;
+}
+
+.friends_cont {
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+    margin-bottom: 10px;
+}
+
+.friends_cont img {
+    width: 85px;
+    border-radius: 50%;
+}
+
+.friends_icons svg {
+    margin-right: 5px;
+}
+
+.friends_icons {
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 15px;
+    margin-bottom: 10px;
+
+    >p {
+        display: flex;
+    }
+}
+
+.friends_icons p {
+    margin: 5px auto;
+}
+
+.friends_btns div {
+    font-size: 12px;
+    height: 30px;
+    margin: 0px 3px;
+}
+
+.friends_head svg {
+    background: #ddd;
+    color: #333;
+    border-radius: 50%;
+    margin: 0px 5px;
+    cursor: pointer;
+    transition: 0.4s;
+    width: 35px;
+    height: 35px;
+    padding: 7px;
+
+
+}
+
+.friends_head svg:first-of-type:hover {
+    background: #4caf50 !important;
+    color: #fff;
+}
+
+.friends_head svg:last-of-type:hover {
+    background: #f0db1d !important;
+    color: #fff;
+}
+
+@media (max-width:449px) {
+    .friends_btns {
+        width: 70%;
+    }
+}

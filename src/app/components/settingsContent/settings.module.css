@@ -1,0 +1,180 @@
+.main_content .box {
+    background-color: #fff;
+    height: 67vh;
+    border-radius: 5px;
+    margin: 10px 0px;
+    overflow: hidden;
+}
+
+
+.box h3 {
+    border-bottom: 1px solid #a7a7a7;
+    width: fit-content;
+    padding-bottom: 3px;
+}
+
+.main_content {
+    padding: 10px;
+}
+
+.main_title {
+    margin: 10px;
+    text-transform: capitalize;
+    font-weight: bold;
+    position: relative;
+    width: fit-content;
+}
+
+.main_title::after {
+    content: "";
+    position: absolute;
+    bottom: -7px;
+    left: 0px;
+    background-image: linear-gradient(90deg, black 35%, white 35%);
+    height: 3px;
+    width: 70%;
+}
+
+/* ==============================site======================== */
+.site_control {
+    padding: 20px;
+}
+
+.toggle_control {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+
+.site_control .form_floating textarea {
+    height: 215px !important;
+    margin: 10px auto !important;
+}
+
+/* ==============================general info================================ */
+.general_info {
+    padding: 20px;
+}
+
+.email_change {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.general_info form input {
+    color: gray;
+}
+
+.changged {
+    color: var(--blue);
+    margin-right: 10px;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+.changged:hover {
+    color: #4299ff;
+}
+
+/* ------------------------------------ security info------------------------------------- */
+.security_info {
+    padding: 20px;
+}
+
+.sec_cont {
+    margin: 30px auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 15px;
+}
+
+.sec_cont:not(:last-of-type) {
+    border-bottom: 1px solid #ddd;
+}
+
+/* ===========================social info-=================================================== */
+.social_info {
+    padding: 20px;
+}
+
+.social_info .input-group {
+    margin: 25px auto;
+}
+
+.social_info .input-group input {
+    box-shadow: none;
+    padding: 10px;
+}
+
+.social_info .input-group svg {
+    font-size: 18px;
+}
+
+.social_info .input-group-text {
+    width: 45px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* -----------------------widgets-------------------------------------- */
+.widgets {
+    padding: 20px;
+}
+
+.widgets .form_check {
+    font-size: 18px;
+    margin: 20px auto;
+    cursor: pointer;
+}
+
+.widgets .form_check label, .widgets .form_check input {
+    cursor: pointer;
+    margin-right: 10px;
+    font-weight: 600;
+}
+
+/* ------------------------------backup--------------------------------- */
+.backup {
+    padding: 20px;
+}
+
+.backup .form_check {
+    font-size: 18px;
+    margin: 20px auto;
+
+    input {
+        margin-right: 12px;
+    }
+}
+
+.backup .radios {
+    padding-bottom: 10px;
+    border-bottom: 1px solid #ddd;
+}
+
+.backup .form_check .form-check-label {
+    cursor: pointer;
+}
+
+.radio_server {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 30px;
+}
+
+.radio_server>label {
+    background: #fff;
+    color: rgb(148, 148, 148);
+    width: 150px;
+    height: 90px;
+    font-size: 18px;
+    font-weight: 500;
+    border-color: rgb(179, 179, 179);
+}

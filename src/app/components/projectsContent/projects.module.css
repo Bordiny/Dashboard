@@ -1,0 +1,70 @@
+.main_title {
+    margin: 10px;
+    text-transform: capitalize;
+    font-weight: bold;
+    position: relative;
+    width: fit-content;
+}
+
+.main_title::after {
+    content: "";
+    position: absolute;
+    bottom: -7px;
+    left: 0px;
+    background-image: linear-gradient(90deg, black 35%, white 35%);
+    height: 3px;
+    width: 70%;
+}
+
+.project_box {
+    background-color: #fff;
+    height: 50vh;
+    border-radius: 5px;
+    margin: 10px 0px;
+    overflow: hidden;
+    padding: 20px;
+}
+
+.project_imgs {
+    display: flex;
+    padding-bottom: 10px;
+    margin-top: 20px;
+    border-bottom: 1px solid #ddd;
+}
+
+.project_imgs img {
+    width: 45px;
+    margin-right: -20px;
+    border-radius: 50%;
+}
+
+.project_skills {
+    border-bottom: 1px solid #ddd;
+    justify-content: end;
+    margin: 21px auto;
+    padding-bottom: 20px;
+    display: flex;
+
+}
+
+.project_skills p {
+    width: fit-content;
+    background: #eee;
+    padding: 8px;
+    border-radius: 5px;
+    margin: 0 5px;
+    font-size: 12px;
+    font-weight: 600;
+}
+
+.project_skill_prog {
+    width: 80%;
+    height: 10px;
+    border-radius: 5px;
+    background-color: #ddd;
+    overflow: hidden;
+}
+
+.project_head .text-black-50 {
+    font-size: 14px !important;
+}

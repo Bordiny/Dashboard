@@ -1,0 +1,118 @@
+.aside {
+    width: 15%;
+    padding: 10px 20px;
+    box-shadow: 0px -1px 11px 2px #d4d4d4;
+    z-index: 2;
+}
+
+.side_head {
+    text-align: center;
+    margin: 20px auto 30px;
+    text-transform: uppercase;
+    font-weight: bold;
+    position: relative;
+}
+
+.side_head::before {
+    content: "";
+    position: absolute;
+    top: 40px;
+    left: 50%;
+    width: 50%;
+    background-color: #333;
+    height: 3px;
+    transform: translateX(-50%);
+    border-radius: 5px;
+}
+
+.side_head::after {
+    content: "";
+    position: absolute;
+    top: 33px;
+    left: 50%;
+    width: 18px;
+    background-color: #333;
+    height: 18px;
+    transform: translateX(-50%);
+    border-radius: 50%;
+    border: 3px solid #fff
+}
+
+.side_list {
+    position: fixed;
+    top: 10px;
+    width: 160px;
+    padding-left: 0;
+}
+
+.aside .side_list li {
+    width: 100%;
+}
+
+.aside .side_list li a {
+    text-decoration: none;
+    text-transform: capitalize;
+    color: #333;
+    transition: 0.3s;
+    display: block;
+    margin: 8px auto;
+    padding: 12px;
+    font-size: 16px;
+    border-radius: 5px;
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+
+    img {
+        width: 25px;
+        margin-right: 7px;
+    }
+}
+
+.aside .side_list li a:hover,
+.aside .active {
+    background-color: #f1f5f9;
+}
+
+
+.aside .side_list li svg {
+    margin-right: 8px;
+}
+
+@media (max-width: 992px) {
+    .aside {
+        width: 60px;
+        display: flex;
+        justify-content: center;
+    }
+
+    .side_head {
+        display: none;
+    }
+
+    .side_list li a span {
+        display: none;
+    }
+
+
+    .side_list li a {
+        width: 40px;
+        padding: 9px 13px !important;
+        text-align: center !important;
+        display: flex !important;
+        justify-content: center;
+    }
+
+    .aside .side_list li svg {
+        margin-right: 0px !important;
+    }
+
+    .side_list {
+        width: auto;
+    }
+}
+
+.active {
+    background-color: #f1f5f9 !important;
+    border-radius: 5px;
+}
