@@ -1,7 +1,7 @@
 "use client"
 import React from 'react'
 import styl from './aside.module.css'
-import { DashboardIcon } from '@mui/icons-material';
+import DashboardIcon from '@mui/icons-material/Dashboard';
 import SettingsIcon from '@mui/icons-material/Settings';
 import PersonIcon from '@mui/icons-material/Person';
 import AccountTreeIcon from '@mui/icons-material/AccountTree';
